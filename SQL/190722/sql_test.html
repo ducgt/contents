@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SQL Test (20190722)</title>
+    <style>
+         a:link {text-decoration: none;}
+        p {
+            line-height: 1.2rem;  
+        }
+        li {
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+        }
+        details {
+            padding: 0.5rem;
+        }
+        .question {
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+            background-color: ivory;
+        }
+        #container {
+        width: 600px;
+        border: 1px solid gray;
+        margin: 20px;
+        padding: 20px;
+        }
+        #why {
+        display: block;
+        margin: 0px auto;
+        }
+    </style>
+  </head>
+  <body>
+	  <p>Chrome 브라우저에서 실행을 권장합니다. (IE, Edge 사용 지양)</p>
+    <div id="container">
+        <h4 style="text-align: center">=== 문제 미리보기 방지 ===</h4>
+        <img id="why" src="why.PNG" width="480px" title="이것은 감동실화입니다. (아마도)">
+        <p style="text-align: center">
+            출처 : <a target="new" href="http://postfiles11.naver.net/20160405_90/ped9209_14598224096689UmYp_JPEG/2016-03-30_14.18.56.jpg?type=w580">만화 삼국지</a></p>
+        <h4 style="text-align: center">=== 문제 미리보기 방지 ===</h4>
+      <div class="question" id="q1">
+        <h3>[문제1]</h3>
+        <p>
+          ※ <strong>SELECT 문</strong>에 대한 설명으로 옳지 <strong>않은</strong> 것을
+          <strong>모두</strong> 고르시오 (선다형)
+          <ol>
+              <li>조건식을 활용한 정렬 포함 검색의 쿼리문 순서는 SELECT절 ORDER BY 절 FROM절 WHERE절 순이다.</li>
+              <li>정렬 포함 검색 시 실행 순서는 SELECT절, FROM절, ORDER BY 절 순이다.</li>
+              <li>해당 계정의 모든 table 목록을 검색할 때는 SELECT table FROM ALL 을 사용한다.</li>
+              <li>테이블에서 중복 데이터 제거 후 검색은 distinctive 명령어를 사용한다.</li>
+              <li>테이블을 오름차순으로 검색하고자 할 때 desc 명령어를 사용한다.</li>
+          </ol>
+        </p>
+        <details>
+            <summary><strong>정답 및 해설</strong></summary>
+            <p>답 : 1, 2, 3, 4, 5</p>
+            <ol>
+                <li>SELECT절 FROM절 WHERE절 ORDER BY 절 순이다.</li>
+                <li>FROM절 SELECT절 ORDER BY절 순이다.</li>
+                <li>SELCT * FROM TAB이다.</li>
+                <li>distinct다.</li>
+                <li>asc다.</li>
+            </ol>
+        </details>
+      </div>
+      <div class="question" id="q2">
+            <h3>[문제2]</h3>
+            <p>
+              ※ <strong>SQL의 데이터 타입</strong>에 대한 설명으로 옳은 것을 
+              <strong>모두</strong> 고른 것은? <br>(선다형)
+              <ol style="list-style-type: upper-alpha;">
+                  <li>VARCHAR2는 가변적인 문자열 타입으로, 한 음절 저장시 3byte를 사용한다.</li>
+                  <li>DATE는 날짜를 표현한다.</li>
+                  <li>NUMBEER는 정수를 표현하는 데이터 타입이다. </li>
+                  <li>NUMBER(5, 3)는 소수점 이하 세 자리를 포함해서 전체 자리수는 5자리로 처리한다는 뜻으로, 2.34는 들어갈 수 있다.</li>
+              </ol>
+              ① A, B ② B, C ③ B, D ④ A, C, D ⑤ A, B, C, D
+            </p>
+            <details>
+                <summary><strong>정답 및 해설</strong></summary>
+                <p>답 : ③ B, D</p>
+                <p></p>
+            </details>
+          </div>
+        <div class="question" id="q3">
+            <h3>[문제3]</h3>
+            <p>
+                ※ 다음은 <strong>SQL의 연산식 또는 연산자</strong>에 대한 수강생들의 설명이다. 이중 옳게 말한 사람을 
+                <strong>모두</strong> 고른 것은? (선다형)
+                <ul>
+                    <li>종성 : 여러 개의 조건에 모두 해당하는지 보고 싶으면 and, 
+                        하나라도 만족하는지 보려면 or을 사용하면 됩니다.</li>
+                    <li>인철 : between A and B를 사용하면 date값이
+                        A와 B를 포함한 사이에 있는 경우만 검색할 수 있습니다.</li>
+                    <li>시찬 : in을 사용하면 여러 값을 동시에 만족시키는 경우를 볼 수 있습니다.</li>
+                    <li>영욱 : null 값을 특정한 수치 값으로 변경하고 싶으면 NVL을 사용하면 되고, 
+                        null인지 아닌지 알아보려면 is나 is not 연산식을 사용합니다.</li>
+                </ul>
+                ① 종성, 인철 ② 인철, 시찬 ③ 종성, 인철, 시찬<br>
+                ④ 종성, 인철, 영욱 ⑤ 종성, 인철, 시찬, 영욱 
+            </p>
+            <details>
+                <summary><strong>정답 및 해설</strong></summary>
+                <p>답 : ④ 종성, 인철, 영욱</p>
+                <p>in을 사용하면 여러 값 중 하나를 만족시키는 경우를 볼 수 있다.<br>
+                    예) WHERE COMM NOT IN(300, 500, 1400);
+                    <p><img src="ex1.png"></p>
+                </p>
+            </details>
+        </div>
+        <div class="question" id="q4">
+                <h3>[문제4]</h3>
+                <p>
+                    ※ 다음 중 <strong>LIKE '__A%'</strong>를 활용하여 검색했을 경우 검색되지 않는 단어는 무엇인가? (선다형)
+                    <ol>
+                        <li>SHAKEYOURBODY</li>
+                        <li>BLADEMASTER</li>
+                        <li>HATESPEECH</li>
+                        <li>WHATTHEHELL</li>
+                        <li>SHALLWEDANCE</li>
+                    </ol>
+                </p>
+                <details>
+                    <summary><strong>정답 및 해설</strong></summary>
+                    <p>답 : ③ HATESPEECH</p>
+                </details>
+            </div>
+        <div class="question" id="q5">
+                <h3>[문제5]</h3>
+                <p>※ 아래의 함수를 통해 계산한 값을 모두 더했을 때의 값은? (단답형)
+                    <ul style="list-style-type: square">
+                        <li>abs(-7)</li>
+                        <li>round(24, 1)</li>
+                        <li>trunc(16.547, 0)</li>
+                        <li>mod(89, 13)</li>
+                        <li>power(2, 3)</li>
+                    </ul>
+                </p>
+                <details>
+                    <summary><strong>정답 및 해설</strong></summary>
+                    <p>답 : 66</p>
+                    <p> 7 + 24 + 16 + 11 + 8</p>
+                </details>
+        </div>
+        <div class="question" id="q6">
+                <h3>[문제6]</h3>
+                <p>※ 결과에 맞게 빈칸을 채우시오. (단답형)
+                    <ul style="list-style-type: square">
+                        <li>select [    ]('  myweekendisbroken    ') from dual;
+                                    => 'myweekendisbroken'</li>
+                        <li>select [    ]('KiLLJAVa'), [    ]('iHaTeSQl') from dual;
+                            => killjava, IHATESQL
+                        </li>
+                        <li>select [    ]('솔로천국'), [    ]('커플지옥') from dual;
+                            => 4, 12
+                        </li>
+                        <li>select [    ]('19/07/21', 4, 2) from dual;
+                            => 07
+                        </li>
+                    </ul>
+                </p>
+                <details>
+                    <summary><strong>정답 및 해설</strong></summary>
+                    <p>답 : TRIM, LOWER, UPPER, LENGTH, LENGTHB, SUBSTR </p>
+                </details>
+        </div>
+        <div class="question" id="q7">
+                <h3>[문제7]</h3>
+                <p>※ 설명에 맞게 빈칸을 채우시오. (단답형)
+                    <ul style="list-style-type: square">
+                        <li>[    ]()는 현재 시스템 날짜에 대한 정보를 제공하는 함수다.</li>
+                        <li>특정 개월 수를 더하려면 [    ]를 쓴다.</li>
+                        <li>두 날짜 사이의 개월 수를 검색하려면 [    ]를 쓴다.</li>
+                        <li>요일을 기준으로 특정 날짜를 검색할 때 [    ]를 쓴다.</li>
+                        <li>주어진 날짜의 달 기준으로 가장 마지막 날짜를 구할 때 [    ]를 쓴다.</li>
+                    </ul>
+                </p>
+                <details>
+                    <summary><strong>정답 및 해설</strong></summary>
+                    <p>답 : SYSDATE, ADD_MONTHS, MONTHS_BETWEEN, NEXT_DAY, LAST_DAY </p>
+                </details>
+        </div>
+        <div class="question" id="q8">
+                <h3>[문제8]</h3>
+                <p>※ 아래 결과가 나오는 SQL문을 작성하시오. (서술형)
+                    <ul style="list-style-type: square">
+                        <li>조건 :<br> <img src="ex2.PNG"></li>
+                        <li>결과 :<br> <img src="ex3.PNG"></li>
+                    </ul>
+                </p>
+                <details>
+                    <summary><strong>모범 답안</strong></summary>
+                    <p>답 : select job, decode(job, 'PRESIDENT', '사장', '사원') as 직급 from emp; </p>
+                </details>
+        </div>
+        <div class="question" id="q9">
+                <h3>[문제9]</h3>
+                <p>※ 아래 결과가 나오는 SQL문을 작성하시오. (서술형)
+                    <br>(SQLPLUS를 사용하셔도 좋습니다. SCOTT 계정의 emp 테이블을 사용)
+                    <ul style="list-style-type: square">
+                        <li>조건 :<br> <img src="ex4.PNG"></li>
+                        <li>결과 : max, min, sum, avg, count를 사용<br> <img src="ex5.PNG" width="480px"></li>
+                    </ul>
+                </p>
+                <details>
+                    <summary><strong>모범 답안</strong></summary>
+                    <p>답 : <br><br><img src="ex6.PNG" width="480px"></p>
+                </details>
+        </div>
+        <div class="question" id="q10">
+                <h3>[문제10]</h3>
+                <p>※ 현재 엔코아의 빅데이터 과정의 담당 강사는 김혜경이다. 그렇다면 JDBC의 개발 소스 구현 1단계부터 6단계까지 적으시오. (서술형)
+                </p>
+                <details>
+                    <summary><strong>모범 답안</strong></summary>
+                    <p>답 : <br><br><img src="ex7.PNG" width="480px">
+                    <br> 1단계 : driver 로딩, 2단계 : DB 접속, 3단계 : sql문장 실행 객체, 4단계 : sql 문장 실행, 5단계 데이터 활용, 6단계 : 종료 (자원반환)
+                    </p>
+                </details>
+        </div>
+    </div>
+  </body>
+</html>
