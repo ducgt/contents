@@ -9,7 +9,7 @@
 ## 웹 구현 내용 바로 가기
 
 - **Algorithm**
-  - [오픈채팅방 문제 활용 웹 페이지](https://qus0in.github.io/Contents/Algorithm/openchat/web/record.html)
+  - [오픈채팅방 문제 활용 웹 페이지](https://qus0in.github.io/Contents/Algorithm/Lv2_openchat/web/record.html)
 
 - **SQL**
   - [TEST1](https://qus0in.github.io/Contents/SQL/190722/sql_test.html)
