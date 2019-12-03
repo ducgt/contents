@@ -2,8 +2,8 @@
 > 알고리즘 풀이 (백준, 프로그래머스) / 교안 PDF / 성취도 Test
 0. **Material** : 프로그램 서비스 기획 및 개발 과정 관련 인사이트 자료
 1. **Algorithm** : 알고리즘 문제 풀이
-    * Baekjoon : 백준
-    * Programmers : 프로그래머스)
+    * Baekjoon : 백준 https://www.acmicpc.net/
+    * Programmers : 프로그래머스 https://programmers.co.kr/
 2. **Test** : 직접 풀어볼 수 있는 성취도 확인 문제
     * Python : 파이썬 코드, 주피터 노트북
     * SQL : RDBMS (Oracle, MySQL, MariaDB 등)
