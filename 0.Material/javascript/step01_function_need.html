@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 369 구현해보기 코드
+    console.log(1);
+    console.log(2);
+    console.log("짝");
+    console.log(4);
+    console.log(5);
+    console.log("짝");
+</script>
+
+<script>
+    // for문, if문을 활용한 효율적 코드 but...
+    for(var i = 1; i <= 6; i++) {
+        if(i % 3 != 0) {
+            console.log(i)   
+        } else {
+            console.log("짝")
+        }
+    }
+    // 5번? 10번? 100번???
+</script>
+
+<script>
+    function game() {
+            for(var i = 1; i <= 6; i++) {
+            if(i % 3 != 0) {
+                console.log(i)   
+            } else {
+                console.log("짝")
+            }
+        }
+    }
+    game()
+    game()
+    game()
+    game()
+    game()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    v1 = "변수1" // 전역변수
+    var v2 = "변수2" // 전역변수
+    function myfun() {
+        v3 = "변수3" // 전역변수
+        var v4 = "변수4"
+        console.log(v1)
+        console.log(v2)
+        console.log(v3)
+        console.log(v4)
+    }
+    myfun()
+    console.log(v1)
+    console.log(v2)
+    console.log(v3)
+    console.log(v4)
+</script>
+
+<script>
+    // 참고: hositing
+    var fruit = "사과";
+    function myfun1() {
+        console.log(fruit)
+        fruit = "배"
+        console.log(fruit)
+        for(var i=0; i<3; i++) {
+            console.log(i)
+        }
+        console.log(i)
+    }
+    myfun1()
+    console.log(fruit)
+
+    var fruit = "사과";
+    function myfun2() {
+        // var fruit 가 되어 있는 셈이다
+        console.log(fruit)
+        var fruit = "배" // 호이스팅 일어나서 위에서 정의해버린다
+        console.log(fruit)
+    }
+    myfun2()
+    console.log(fruit)
+
+    // 다음 시간엔 자바스크립트 내장함수 + 함수의 정의 및 호출 방법 실습
+</script>
+    
+</body>
+</html>
