@@ -3,58 +3,66 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">		
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style_quiz.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_quiz.css" />
 </head>
 <body>
-
-<div class="topnav">
-  <li>
-    <li>
-      <img src="/img/en-core.png" style="width: 7rem" />
-    </li>
-    <li></li>
+  <div class="topnav">
     <li>
       <li>
-        <a href="main.html"
-          ><img
-            src="/img/icon_newsfeed.png"
-            style="width: 2rem; height: 2rem;"
+        <img src="img/en-core.png" style="width: 7rem" />
+      </li>
+      <li></li>
+      <li>
+        <li>
+          <a href="main.html"
+            ><img
+              src="img/icon_newsfeed.png"
+              style="width: 2rem; height: 2rem;"
+          /></a>
+        </li>
+        <li>
+          <a href="quiz.html"
+          ><img src="img/icon_quiz.png" style="width: 2rem; height: 2rem;"
         /></a>
-      </li>
-      <li>
-        <a href="quiz.html"
-        ><img src="/img/icon_quiz.png" style="width: 2rem; height: 2rem;"
-      /></a>
+        </li>
+        <li>
+          <a href="app1.html"
+          ><img src="img/icon_app1.png" style="width: 2rem; height: 2rem;"
+        /></a>
+        </li>
+        <li>
+          <a href="app2.html"
+          ><img src="img/icon_app2.png" style="width: 2rem; height: 2rem;"
+        /></a>
+        </li>
       </li>
     </li>
-  </li>
-</div>
+  </div>
 <div class="row">
   <div class="rightcolumn">
     <div class="card">
       <h2>Quiz</h2>
-      <h5 id="today"></h5>
-      
+      <div id="quiz">
       <div class="form">
-        <form name="question" action="mpindex-main.html">
+        <form name="question" onsubmit="return false;" action="mpindex-main.html">
           <label for="name">이름 </label> <input type="text" name="name" placeholder="이름을 입력해주세요">
           <label for="gender">성별 </label>
-          <input type="radio" name="gender" value="male">남
-          <input type="radio" name="gender" value="female">여
+          <input type="radio" name="gender" value="남성">남
+          <input type="radio" name="gender" value="여성">여
           <br><br>
           <label for="birthday">생년월일</label><br>
           <input type ="date" name="birthday" placeholder="생년월일을 입력해주세요">
           <br><br>
           <label for="q1">겨울왕국에서 등장하지 않는 사람은?</label>  
-          <input type="checkbox" name="q1_1" value="엘사">엘사  
-          <input type="checkbox" name="q1_2" value="우디">우디 
-          <input type="checkbox" name="q1_3" value="안나">안나 
+          <input type="checkbox" name="q1" value="엘사">엘사  
+          <input type="checkbox" name="q1" value="우디">우디 
+          <input type="checkbox" name="q1" value="안나">안나 
           <br><br>
           <label for="q2">스벤이 좋아하는 과일은?</label>
           <select name="q2" > 
-          <option value="사과">사과
-          <option value="배" selected>배
+          <option value="사과" selected>사과
+          <option value="배">배
           <option value="당근">당근
           <option value="수박">수박
           </select> 
@@ -68,7 +76,7 @@
           </select>
           <br><br>
           <label for="q4">겨울 왕국 연령가는?</label>
-          <input type="radio" name="q4" value="1"/> 7세 미만  
+          <input type="radio" name="q4" value="1"/> 전체관람가 
           <input type="radio" name="q4" value="2"/> 7세 이상  
           <input type="radio" name="q4" value="3"/> 12세 이상  
           <input type="radio" name="q4" value="4"/> 15세 이상  
@@ -76,12 +84,12 @@
           <br><br>
           <label for="review">'겨울 왕국' 감상평
           </label><br>          
-          <textarea name ="review" cols="30" rows="5">
-          </textarea>  
-          <input type="submit" value="submit"/> 
+          <textarea name ="review" cols="30" rows="5"></textarea><br>
+          <button type="button" onclick="submitQuiz()">submit</button>
           <input type="reset" value="reset"/> 
           </form>
     </div>
+  </div>
 </div>
 </div>
 <div class="leftcolumn">
@@ -101,5 +109,12 @@
 </div>
 </div>
 </div>
+<div class="footer">
+  <h2>
+    &copy;copyright<br />
+    황민지 email@email.com
+  </h2>
+</div>
+<script src="js/quiz.js"></script>
 </body>
 </html>
