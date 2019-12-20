@@ -1,4 +1,4 @@
-﻿# Created by https://www.gitignore.io/api/eclipse,jupyternotebooks,visualstudiocode
+# Created by https://www.gitignore.io/api/eclipse,jupyternotebooks,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=eclipse,jupyternotebooks,visualstudiocode
 
 ### Eclipse ###
@@ -96,3 +96,4 @@ ipython_config.py
 .history
 
 # End of https://www.gitignore.io/api/eclipse,jupyternotebooks,visualstudiocode
+0.Material/web.zip

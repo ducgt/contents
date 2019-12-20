@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">		
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style_quiz.css" />
+</head>
+<body>
+
+<div class="encoreimg">
+</div>
+
+<div class="topnav">
+  <li>
+    <li>
+      <img src="/img/en-core.png" style="width: 7rem" />
+    </li>
+    <li></li>
+  <li>
+    <li>
+      <a href="main.html"
+        ><img
+          src="/img/icon_newsfeed.png"
+          style="width: 2rem; height: 2rem;"
+      /></a>
+    </li>
+    <li>
+      <a href="quiz.html"
+      ><img src="/img/icon_quiz.png" style="width: 2rem; height: 2rem;"
+    /></a>
+    </li>
+    </li>
+  </ul>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Quiz</h2>
+      <h5>Today, Dec 7, 2017</h5>
+      
+      <div class="form">
+        <form name="설문" action="mpindex-main.html">
+          <label for="fname">이름 </label> <input type="text" id="fname" name="firstname" placeholder="이름을 입력해주세요">
+          <label for="fgender">성별 </label>
+          <input type="radio" name="gender" value="male">남
+          <input type="radio" name="gender" value="female">여
+          <br><br>
+          <label for="fname">생년월일</label><br>
+          <input type ="date" id="fbirth" name="birthday" placeholder="생년월일을 입력해주세요">
+          <br>
+          <br>
+          겨울왕국에서 등장하지 않는 사람은?  
+          <input type="checkbox" name="hobby" value="1">엘사  
+          <input type="checkbox" name="hobby" value="2"> 우디 
+          <input type="checkbox" name="hobby" value="3">안나 
+          <br><br>
+          <label for="fruit">스벤이 좋아하는 과일은?</label>
+          <select id="fruit" name="fruit" > 
+          <option value="사과"> 사과
+          <option value="배" selected> 배
+          <option value="당근"> 당근
+          <option value="수박"> 수박
+          </select> 
+          <br><br>
+          <label for="sing">겨울왕국2'에서 'Show yourself'를 부른 캐릭터 이름은?(다중선택 가능)</label> 
+          <select name="p-language" size="4" multiple>
+          <option value="1" >엘사
+          <option value="2" > 안나
+          <option value="3" > 스벤
+          <option value="4" > 피터
+          </select>
+          <br><br>
+          <label for="review">겨울 왕국 연령가는 ? 
+          </label>
+          <input type="radio" name="hobby" value="1"> 7세 미만  
+          <input type="radio" name="hobby" value="2"> 7세 이상  
+          <input type="radio" name="hobby" value="3"> 12세 이상  
+          <input type="radio" name="hobby" value="4"> 15세 이상  
+          <input type="radio" name="hobby" value="5"> 18세 이상  
+          <br><br>
+          <label for="review">'겨울 왕국' 감상평
+          </label><br>          
+          <textarea name ="introduction" cols="30" rows="5">
+          </textarea>  
+          <input type="submit" value="submit"> 
+          <input type="reset" value="reset"> 
+          </form>
+    </div>
+</div>
+</div>
+<div class="rightcolumn">
+  <div class="card">
+    <h2>About Me</h2>
+    <div class="fakeimg" style="height:200px;">Image</div>
+  </div>
+  
+  <div class="card">
+    <h3>Profile</h3>
+    <p>Name: joan</p>
+    <p>Age: 28</p>
+    <p>Job: singer</p>
+    <p>Gender: woman</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
