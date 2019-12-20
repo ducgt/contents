@@ -6,35 +6,36 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body>
-    <div class="encoreimg"></div>
     <div class="topnav">
       <li>
         <li>
           <img src="/img/en-core.png" style="width: 7rem" />
         </li>
         <li></li>
-      <li>
         <li>
-          <a href="main.html"
-            ><img
-              src="/img/icon_newsfeed.png"
-              style="width: 2rem; height: 2rem;"
+          <li>
+            <a href="main.html"
+              ><img
+                src="/img/icon_newsfeed.png"
+                style="width: 2rem; height: 2rem;"
+            /></a>
+          </li>
+          <li>
+            <a href="quiz.html"
+            ><img src="/img/icon_quiz.png" style="width: 2rem; height: 2rem;"
           /></a>
+          </li>
         </li>
-        <li>
-          <a href="quiz.html"
-          ><img src="/img/icon_quiz.png" style="width: 2rem; height: 2rem;"
-        /></a>
-        </li>
-        </li>
-      </ul>
+      </li>
     </div>
-
     <div class="row">
-      <div class="leftcolumn">
+      <div class="rightcolumn">
         <div class="card">
+          <h3 id="today"></h3>
+          <button id="b1" onclick="hide('c1')">Close</button>
+          <div id="c1">
           <h2>TITLE HEADING</h2>
-          <h5>Today, Dec 7, 2017</h5>
+          <h5>Title description, Sep 2, 2017</h5>
           <div class="fakeimg" style="height:200px">Image</div>
           <p>Some text..</p>
           <p>
@@ -43,8 +44,11 @@
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco.
           </p>
+          </div>
         </div>
         <div class="card">
+          <button id="b2" onclick="hide('c2')">Close</button>
+          <div id="c2">
           <h2>TITLE HEADING</h2>
           <h5>Title description, Sep 2, 2017</h5>
           <div class="fakeimg" style="height:200px;">Image</div>
@@ -56,15 +60,17 @@
             exercitation ullamco.
           </p>
         </div>
+        </div>
         <div class="carded">
-          <h3>Popular Post</h3>
-          <div class="bfimg"><p>Image</p></div>
-          <div class="bfname"><p>My best friend</p></div>
-          <div class="bfimg"><p>Image</p></div>
-          <div class="bfname"><p>My best friend</p></div>
+          <button onclick="friendsAll()">All</button>
+          <button onclick="friendsGroup('직장')">Work</button>
+          <button onclick="friendsGroup('학교')">School</button>
+          <h3>My Friends</h3>
+          <div id="myfriends">
+          </div>
         </div>
       </div>
-      <div class="rightcolumn">
+      <div class="leftcolumn">
         <div class="card">
           <h2>About Me</h2>
           <div class="fakeimg" style="height:200px;">Image</div>
@@ -83,8 +89,9 @@
     <div class="footer">
       <h2>
         &copy;copyright<br />
-        황민지 email@email
+        황민지 email@email.com
       </h2>
     </div>
+    <script src="/js/main.js"></script>
   </body>
 </html>
