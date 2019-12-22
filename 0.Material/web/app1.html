@@ -41,44 +41,11 @@
     <div class="row">
       <div class="rightcolumn">
         <div class="card">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-            <div id="c1">
-            <div class="fakeimg" style="height:200px">Image</div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco.
-            </p>
-          </div>
-          <button id="b1" onclick="hide('c1')">Close</button>
-        </div>
-        <div class="card">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-            <div id="c2">
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco.
-            </p>
-          </div>
-          <button id="b2" onclick="hide('c2')">Close</button>
-        </div>
-        <div class="carded">
-          <button onclick="friendsAll()">All</button>
-          <button onclick="friendsGroup('직장')">Work</button>
-          <button onclick="friendsGroup('학교')">School</button>
-          <h3>My Friends</h3>
-          <div id="myfriends">
+          <h2>환율 차트</h2>
+          <h5 id="today"></h5>
+            <div id="chart_div"></div>
           </div>
         </div>
-      </div>
       <div class="leftcolumn">
         <div class="card">
           <h2>About Me</h2>
@@ -101,6 +68,8 @@
         황민지 email@email.com
       </h2>
     </div>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/chart.js"></script>
   </body>
 </html>
